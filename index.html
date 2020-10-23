@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gradient Tools</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+      height: 100%
+    }
+
+    .bgimg {
+      background-image: url("images/background_landing.jpg");
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='map' style='width: 100%; height: 100%;'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGV2bmdjIiwiYSI6ImNrZ21rZm42eTBmZGgycXA5YW1uMnp5b28ifQ.U-5pxC9V3iNC1uNP7X1mVw';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11'
+    });
+  </script>
+
+  <!-- <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">Coming Soon</h1>
+      <hr class="w3-border-white" style="margin:auto;width:40%">
+    </div>
+
+  </div> -->
+
+</body>
+
+</html>
